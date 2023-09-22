@@ -10,7 +10,7 @@ export default [
   { src: carImgLogo1, alt: 'Yello sports car showing the rear light' },
   { src: carImgLogo2, alt: 'Red sports car moving forward' },
   { src: carImgLogo3, alt: 'Silver SUV on sands' },
-  { src: carImgLogo4, alt: 'Green pickup on a wasteland' },
+  { src: carImgLogo4, alt: 'Green pickup on a grassland' },
   { src: carImgLogo5, alt: 'White SUV in urban city area' },
   { src: carImgLogo6, alt: 'Gret truck with fancy background' },
   { src: carImgLogo7, alt: 'Hybrid SUV showing the front grill' },

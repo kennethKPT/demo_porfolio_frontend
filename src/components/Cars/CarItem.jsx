@@ -33,7 +33,7 @@ export default function CarItem({ car, onViewDetails, isExpanded }) {
           <img {...car.image} />
           <div className={styles.carItemMeta}>
             <h2>
-              {car.title} {car.status}
+              {car.title}
             </h2>
             <p>Sales until {formattedDate}</p>
             <p className={styles.carItemActions}>

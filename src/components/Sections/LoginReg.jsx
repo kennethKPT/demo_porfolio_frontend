@@ -7,15 +7,15 @@ import styles from "./LoginReg.module.css";
 import Modal from "../UI/Modal";
 
 const LoginReg = () => {
-  const [isCreatingNewCar, setIsCreatingNewCar] = useState();
+  const [isRegistering, setIsRegistering] = useState();
   const [isLoggingIn, setIsLoggingIn] = useState(false);
 
-  function handleDone() {
-    setIsCreatingNewCar(false);
+  function registerDoneHandler() {
+    setIsRegistering(false);
   }
 
   const registerHandler = () => {
-    setIsCreatingNewCar(true);
+    setIsRegistering(true);
   };
 
   const loginHandler = () => {
@@ -25,9 +25,17 @@ const LoginReg = () => {
     setIsLoggingIn(false);
   };
 
+  const Register = ({ onDone }) => {
+    return (
+      <Modal title="Register" onClose={onDone}>
+        Registration Form
+      </Modal>
+    );
+  };
+
   return (
     <>
-      <AnimatePresence>{isCreatingNewCar && <NewCar onDone={handleDone} />}</AnimatePresence>
+      <AnimatePresence>{isRegistering && <Register onDone={registerDoneHandler} />}</AnimatePresence>
       <AnimatePresence>
         {isLoggingIn && (
           <Modal title="Login" onClose={loginDone}>

@@ -55,7 +55,6 @@ a.active:hover {
 
 /* Style the dropdown content (hidden by default) */
 .dropdownContent {
-  display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   min-width: 160px;
@@ -99,11 +98,6 @@ a.active:hover {
   background-color: rgba(76, 76, 76, 0.5);
   text-decoration: underline;
   color: white;
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdownContent {
-  display: block;
 }
 
 @media screen and (max-width: 768px) {

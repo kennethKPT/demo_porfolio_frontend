@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import styles from "./NavigationItem.module.css";
 
 const NavigationItem = (props) => {
+  const [showSubMenu, setShowSubMenu] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   useEffect(() => {
@@ -21,6 +22,19 @@ const NavigationItem = (props) => {
       classes = `${styles.active} ${classes}`;
     }
     return classes;
+  };
+
+  const showSubmenuHandler = () => {
+    setShowSubMenu(true);
+  };
+
+  const hideSubmenuHandler = () => {
+    setShowSubMenu(false);
+  };
+
+  const subMenuClickHandler = (originalHandler) => {
+    setShowSubMenu(false);
+    originalHandler();
   };
 
   let content;
@@ -48,6 +62,8 @@ const NavigationItem = (props) => {
     content = (
       <motion.div
         className={`${styles.dropdown} ${showMobileMenu ? styles.dropdownFloatNone : ""}`}
+        onMouseEnter={showSubmenuHandler}
+        onMouseLeave={hideSubmenuHandler}
         variants={props.variants}
       >
         <button className={styles.dropbtn}>
@@ -55,13 +71,15 @@ const NavigationItem = (props) => {
             {props.text} <span className={styles.dropdownRotateIcon}>&#9656;</span>
           </NavLink>
         </button>
-        <div className={styles.dropdownContent}>
-          {props.subMenu.map((menu) => (
-            <NavLink key={menu.to} className={styles.dropdownItem} onClick={menu.onClick} to={menu.to}>
-              {menu.text}
-            </NavLink>
-          ))}
-        </div>
+        {showSubMenu && (
+          <div className={styles.dropdownContent}>
+            {props.subMenu.map((menu) => (
+              <NavLink key={menu.to} className={styles.dropdownItem} onClick={()=>{subMenuClickHandler(menu.onClick)}} to={menu.to}>
+                {menu.text}
+              </NavLink>
+            ))}
+          </div>
+        )}
       </motion.div>
     );
   }

@@ -6,7 +6,7 @@ import HomePage from "./pages/Home";
 import Cars from "./pages/Cars";
 import P1 from "./pages/P1";
 import P2 from "./pages/P2";
-import Service from "./pages/Service"
+import Service from "./pages/Service";
 import About from "./pages/About";
 
 const router = createBrowserRouter([
