@@ -1,0 +1,16 @@
+.home {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 6rem 2rem 0;
+}
+
+.home > div {
+  width: 100%;
+}
+
+@media (min-width: 1201px) {
+  .home > div {
+    width: 48%;
+  }
+}

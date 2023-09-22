@@ -1,0 +1,65 @@
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.tabs button {
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  background-color: transparent;
+  color: #b0caf9;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+.tabs button:hover,
+.tabs button.selected {
+  /* background-color: #355767; */
+  color: #fff;
+}
+
+.tabs .activeTabIndicator {
+  border: 1.5px solid #0f86ef;
+  border-radius: 8px;
+}
+
+.tabs li:last-child {
+  margin-left: auto;
+}
+
+.tabs li:last-child button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #0f61ef;
+  color: #fff;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.donly {
+  display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs button {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.75rem;
+  }
+
+  .tabs li:last-child button {  
+    font-size: 0.5rem;
+    line-height: 0.3rem;
+  }
+  .donly {
+    display: none;
+  }
+}

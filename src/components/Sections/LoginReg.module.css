@@ -1,0 +1,9 @@
+.loginReg {
+  line-height: 3rem;
+  white-space: nowrap;
+}
+
+.loginReg span:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}

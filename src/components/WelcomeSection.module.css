@@ -1,0 +1,24 @@
+.welcomeSection img {
+  box-shadow: 0 0 10px black inset;
+}
+
+.welcomeSection section{
+  height: 100vh;
+  padding: 30vh 10vw 10vw;
+  margin-bottom: 20rem;
+}
+
+.content{
+  background-color: rgb(29, 29, 29, 0.8);
+  border-radius: 1rem;
+  padding: 0.8rem;
+  max-width: 30rem;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.welcomeSection h1 {
+  margin: 0;
+}

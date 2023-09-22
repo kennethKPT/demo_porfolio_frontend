@@ -1,0 +1,41 @@
+.card {
+  padding: 0.1rem 2rem 2rem 2rem;
+  margin: 0 0 2rem 0;
+  background-color: #22323a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+/* Add some padding inside the card container */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container img {
+  width: 50%;
+  height: 100%;
+}
+
+.container p {
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .container p {
+    margin: 2rem 0;
+  }
+}

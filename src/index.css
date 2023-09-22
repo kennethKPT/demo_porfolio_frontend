@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1a1a1a;
+  color: #d9e2f1;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 70vh;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.taCenter {
+  text-align: center;
+}
+
+.taLeft {
+  text-align: left;
+}
+
+.taRight {
+  text-align: right;
+}
+
+.toCenter {
+  margin: auto;
+}
+
+.toRight {
+  margin-left: auto;
+}
+
+.toLeft {
+  margin-right: auto;
+}
+
+.badge {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background-color: #0f61ef;
+  color: #fff;
+  font-size: 0.5rem;
+}

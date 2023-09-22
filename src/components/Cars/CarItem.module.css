@@ -1,0 +1,91 @@
+
+.carItem {
+  width: 100%;
+}
+
+.carItem header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.carItemMeta {
+  width: 100%;
+}
+
+.carItem header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #b1c1d9;
+}
+
+.carItem header p {
+  margin-top: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+}
+
+.carItemActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.carItemActions button {
+  cursor: pointer;
+  font: inherit;
+  background: transparent;
+  border: none;
+  color: #7aaafc;
+  padding: 0;
+}
+
+.carItemActions button:hover {
+  color: #5d7bf2;
+}
+
+.carItemActions .btnNegative {
+  color: #ff7b7b;
+}
+
+.carItemActions .btnNegative:hover {
+  color: #ff4f4f;
+}
+
+.carItem img {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 2rem;
+  object-fit: contain;
+}
+
+.carItemDetails button {
+  cursor: pointer;
+  font: inherit;
+  background: transparent;
+  border: none;
+  color: #7aaafc;
+  padding: 0;
+}
+
+.carItemDetailsIcon {
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.25rem;
+}
+
+.carItemDescription {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .carItem header p {
+    font-size: 0.75rem;
+  }
+
+  .carItem img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0.5rem;
+  }
+}
