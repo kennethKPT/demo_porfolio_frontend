@@ -19,7 +19,7 @@ const Card = (props) => {
         {props.img && (
           <>
             <img src={props.img.src} alt={props.img.alt} />
-            <p>{props.content}</p>
+            {props.children}
           </>
         )}
         {!props.img && props.context}

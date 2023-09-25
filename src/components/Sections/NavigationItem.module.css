@@ -1,5 +1,5 @@
 /* Style the links inside the navigation bar */
-a {
+.navBar a {
   float: left;
   display: block;
   font-size: medium;
@@ -8,19 +8,19 @@ a {
   padding: 14px 16px;
   text-decoration: none;
   border-radius: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 0.8rem;
   height: 3.1rem;
 }
 
-a:hover {
+.navBar a:hover {
   background-color: rgba(162, 162, 162, 0.5);
   text-decoration: underline;
   color: white;
 }
 
 /* Add an active class to highlight the current page */
-a.active,
-a.active:hover {
+.navBar a.active,
+.navBar a.active:hover {
   display: block;
   background-color: rgb(15, 97, 239);
   text-decoration: none;
@@ -28,16 +28,17 @@ a.active:hover {
 }
 
 /* Dropdown container - needed to position the dropdown content */
-.dropdown {
+.navBar.dropdown {
   float: left;
   overflow: hidden;
+  margin-right: 0.5rem;
 }
 
-.dropdown a {
+.navBar.dropdown a {
   margin: 0;
 }
 
-.dropdown .dropbtn {
+.navBar.dropdown .dropbtn {
   border: none;
   outline: none;
   color: white;
@@ -49,22 +50,22 @@ a.active:hover {
   border-radius: 0.5rem;
 }
 
-.dropdown button.dropbtn {
+.navBar.dropdown button.dropbtn {
   padding: 0;
 }
 
 /* Style the dropdown content (hidden by default) */
-.dropdownContent {
+.navBar .dropdownContent {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
   z-index: 1;
   border-radius: 0.5rem;
 }
 
 /* Style the links inside the dropdown */
-.dropdownContent a {
+.navBar .dropdownContent a {
   float: none;
   color: white;
   font-size: medium;
@@ -75,11 +76,11 @@ a.active:hover {
   border-radius: 0.5rem;
 }
 
-.dropdownRotateIcon {
+.navBar .dropdownRotateIcon {
   display: inline-block;
 }
 
-.dropdown:hover .dropdownRotateIcon {
+.navBar.dropdown:hover .dropdownRotateIcon {
   animation: rotate90 0.2s ease-in;
   transform: rotate(90deg);
 }
@@ -94,35 +95,35 @@ a.active:hover {
 }
 
 /* Add a grey background to dropdown links on hover */
-.dropdownContent a:hover {
-  background-color: rgba(76, 76, 76, 0.5);
+.navBar .dropdownContent a:hover {
+  background-color: rgba(76, 76, 76);
   text-decoration: underline;
   color: white;
 }
 
 @media screen and (max-width: 768px) {
-  a {
+  .navBar a,
+  .navBar.dropdown {
     margin-right: 0;
   }
-  .hide {
+  .navBar .hide {
     display: none;
   }
-  .dropdownFloatNone {
+  .navBar.dropdownFloatNone {
     float: none;
   }
-  .dropdown .dropbtn {
+  .navBar.dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
   }
-  .dropdown a.dropdownItem {
+  .navBar.dropdown a.dropdownItem {
     display: none;
   }
-  .dropdown:hover a.dropdownItem {
+  .navBar.dropdown:hover a.dropdownItem {
     display: block;
-  }  
-  .dropdownContent {
+  }
+  .navBar .dropdownContent {
     position: relative;
   }
-
 }

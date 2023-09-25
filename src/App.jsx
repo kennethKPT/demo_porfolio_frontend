@@ -4,8 +4,10 @@ import RootLayout from "./pages/Root";
 import WelcomePage from "./pages/Welcome";
 import HomePage from "./pages/Home";
 import Cars from "./pages/Cars";
-import P1 from "./pages/P1";
-import P2 from "./pages/P2";
+import DemoAPI from "./pages/Demo/DemoAPI";
+import DemoSPA from "./pages/Demo/DemoAPI";
+import DemoResponsiveness from "./pages/Demo/DemoAPI";
+import DemoCloud from "./pages/Demo/DemoAPI";
 import Service from "./pages/Service";
 import About from "./pages/About";
 
@@ -18,10 +20,12 @@ const router = createBrowserRouter([
       { path: "Home", element: <HomePage /> },
       { path: "Cars", element: <Cars /> },
       {
-        path: "Parts",
+        path: "Demo",
         children: [
-          { path: "P1", element: <P1 /> },
-          { path: "P2", element: <P2 /> },
+          { path: "API", element: <DemoAPI /> },
+          { path: "SPA", element: <DemoSPA /> },
+          { path: "Responsiveness", element: <DemoResponsiveness /> },
+          { path: "Cloud", element: <DemoCloud /> },
         ],
       },
       { path: "Service", element: <Service /> },

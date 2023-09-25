@@ -38,7 +38,6 @@ export default function NewCar({ onDone }) {
     }
 
     onDone();
-    console.log(car);
     addCar(car);
   }
 

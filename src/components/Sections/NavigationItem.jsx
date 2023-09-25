@@ -42,7 +42,7 @@ const NavigationItem = (props) => {
   if (!props.subMenu) {
     //No Sub Menu
     content = (
-      <motion.div variants={props.variants}>
+      <motion.div variants={props.variants} className={styles.navBar}>
         <NavLink to={props.to} onClick={props.onClick} className={calcClasses}>
           {props.text}
         </NavLink>
@@ -61,7 +61,7 @@ const NavigationItem = (props) => {
     //With Sub Menu
     content = (
       <motion.div
-        className={`${styles.dropdown} ${showMobileMenu ? styles.dropdownFloatNone : ""}`}
+        className={`${styles.dropdown} ${styles.navBar} ${showMobileMenu ? styles.dropdownFloatNone : ""}`}
         onMouseEnter={showSubmenuHandler}
         onMouseLeave={hideSubmenuHandler}
         variants={props.variants}

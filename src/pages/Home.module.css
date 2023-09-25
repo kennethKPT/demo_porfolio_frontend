@@ -9,6 +9,14 @@
   width: 100%;
 }
 
+.home a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: underline;
+}
+
 @media (min-width: 1201px) {
   .home > div {
     width: 48%;

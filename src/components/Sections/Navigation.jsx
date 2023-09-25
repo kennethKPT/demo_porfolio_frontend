@@ -44,8 +44,8 @@ const Navigation = () => {
         <NavigationItem to="/Home" text="Home" onClick={clsMenu} showMobileMenu={isMobile} variants={item} />
         <NavigationItem to="/Cars" text="Cars" onClick={clsMenu} showMobileMenu={isMobile} variants={item} />
         <NavigationItem
-          to="/Parts"
-          text="Parts"
+          to="/Demo"
+          text="Demo"
           onClick={(event) => {
             event.preventDefault();
           }}
@@ -53,21 +53,33 @@ const Navigation = () => {
           variants={item}
           subMenu={[
             {
-              to: "/Parts/P1",
-              text: "Link 1",
+              to: "/Demo/API",
+              text: "API Connectivity",
               onClick: clsMenu,
               showMobileMenu: isMobile,
             },
             {
-              to: "/Parts/P2",
-              text: "Link 2",
+              to: "/Demo/SPA",
+              text: "Single Page Application",
+              onClick: clsMenu,
+              showMobileMenu: isMobile,
+            },
+            {
+              to: "/Demo/Responsiveness",
+              text: "Responsiveness",
+              onClick: clsMenu,
+              showMobileMenu: isMobile,
+            },
+            {
+              to: "/Demo/Cloud",
+              text: "Cloud Services",
               onClick: clsMenu,
               showMobileMenu: isMobile,
             },
           ]}
         ></NavigationItem>
         <NavigationItem to="/Service" text="Service" onClick={clsMenu} showMobileMenu={isMobile} variants={item} />
-        <NavigationItem to="/About" text="About Me" onClick={clsMenu} showMobileMenu={isMobile} variants={item} />
+        <NavigationItem to="/About" text="About" onClick={clsMenu} showMobileMenu={isMobile} variants={item} />
         <a href="#" className={styles.icon} onClick={triggerMobileMenu}>
           &#9776;
         </a>
