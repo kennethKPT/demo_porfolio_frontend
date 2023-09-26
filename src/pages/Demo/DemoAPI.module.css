@@ -50,6 +50,15 @@ input.customURLInput {
   border-radius: 0.3rem;
 }
 
+div.stepThreeContent{
+  display: flex;
+}
+
+div.stepThreeContent p {
+  margin: 0 1rem 0 0;
+  width: 85%;
+}
+
 div.nameCardContainer {
   width: 70%;
   margin: 0 auto;
@@ -68,14 +77,26 @@ table.userNamecard tr td:first-child {
   .demoApi img {
     width: 100%;
   }
+
   .example {
     width: 100%;
     margin: 1rem 0rem;
   }
-  div.nameCardContainer {
-    width: inherit;
-    margin: inherit;
+
+  div.stepThreeContent{
+    display: unset;
   }
+  
+  div.stepThreeContent p {
+    margin: 0 0 1rem 0;
+    width: 100%;
+  }
+
+  div.nameCardContainer {
+    width: unset;
+    margin: unset;
+  }
+
   table.userNamecard tr td:first-child {
     padding: 0 1rem;
   }

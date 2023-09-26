@@ -7,7 +7,7 @@ const Button = (props) => {
   let buttonType = "";
   
   if (props.type) {
-    buttonType = eval("styles."+props.type);
+    buttonType = styles[props.type];
   }
 
   return (

@@ -50,18 +50,21 @@ const DemoAPI = () => {
   };
 
   let stepOneButton = (
-    <div>
+    <>
       <div>
         <Button type="theme" onClick={stepOneHandler}>
           Step 1. Get the raw data
         </Button>
-        <a href={`https://reqres.in/api/users/${inputUserId}`} target="_blank">
-          Show data in New Tab
-        </a>
+        <Button type="danger" onClick={resetHandler}>
+          Reset
+        </Button>
       </div>
       <div>
         <p className={styles.customURL}>
-          (URL: https://reqres.in/api/users/
+          (URL:{" "}
+          <a href={`https://reqres.in/api/users/${inputUserId}`} target="_blank">
+            https://reqres.in/api/users/
+          </a>
           <input
             type="number"
             className={styles.customURLInput}
@@ -75,13 +78,13 @@ const DemoAPI = () => {
           )
         </p>
       </div>
-    </div>
+    </>
   );
 
   let stepTwoButton = (
     <div>
       <Button type="theme" onClick={stepTwoHandler}>
-        Step 2. Make the data beautiful
+        Step 2. Process Data
       </Button>
       <Button type="danger" onClick={resetHandler}>
         Reset
@@ -90,8 +93,8 @@ const DemoAPI = () => {
   );
 
   let stepThreeButton = (
-    <div>
-      Check the namecard generated below. Data from API become Information.
+    <div className={styles.stepThreeContent}>
+      <p>Check the namecard generated below. Data from API become Information.</p>
       <Button type="danger" onClick={resetHandler}>
         Reset
       </Button>
@@ -132,7 +135,7 @@ const DemoAPI = () => {
             <table className={styles.userNamecard}>
               <tbody>
                 <tr>
-                  <td>User ID:</td>
+                  <td>ID:</td>
                   <td>{user.id}</td>
                 </tr>
                 <tr>
