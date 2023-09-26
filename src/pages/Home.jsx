@@ -55,7 +55,7 @@ const HomePage = () => {
           better user experience for visitors and customers.
           <br />
           <br />
-          <NavLink to="/Demo/Responsiveness">Try smaller screen width &gt;&gt;</NavLink>
+          <NavLink to="/Demo/Responsiveness">Try different screen widths &gt;&gt;</NavLink>
         </p>
       </Card>
       <Card title="Cloud Technology" img={{ src: cloudImg, alt: "Official logo of Amazon Web Service (AWS)" }}>

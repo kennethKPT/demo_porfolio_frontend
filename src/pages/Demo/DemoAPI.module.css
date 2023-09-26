@@ -1,0 +1,82 @@
+.demoApi {
+  margin: 6rem 2rem;
+}
+
+.demoApi a,
+.demoApi a:visited {
+  color: #ccc;
+}
+
+.demoApi img {
+  width: 30%;
+}
+
+.demoApi h3 {
+  text-align: center;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0rem 1rem;
+}
+
+.example a:last-child,
+.example button:last-child {
+  float: right;
+}
+
+.exampleDesc {
+  padding: 0.5rem 0;
+}
+
+.exampleDesc pre {
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  min-height: 5rem;
+  padding: 0.2rem;
+  overflow-x: auto;
+}
+
+p.customURL {
+  margin: 1rem 0 0 0;
+}
+
+input.customURLInput {
+  width: 10rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  border-radius: 0.3rem;
+}
+
+div.nameCardContainer {
+  width: 70%;
+  margin: 0 auto;
+}
+
+table.userNamecard {
+  margin: 1rem 0;
+}
+
+table.userNamecard tr td:first-child {
+  padding: 0 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .demoApi img {
+    width: 100%;
+  }
+  .example {
+    width: 100%;
+    margin: 1rem 0rem;
+  }
+  div.nameCardContainer {
+    width: inherit;
+    margin: inherit;
+  }
+  table.userNamecard tr td:first-child {
+    padding: 0 1rem;
+  }
+}

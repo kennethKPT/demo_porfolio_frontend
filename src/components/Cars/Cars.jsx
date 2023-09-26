@@ -35,41 +35,43 @@ export default function Cars() {
   const displayedCars = filteredCars[selectedType];
 
   return (
-    <div className={styles.cars}>
-      <CarTabs cars={filteredCars} onSelectType={handleSelectType} selectedType={selectedType}>
-        <AnimatePresence mode="wait">
-          {displayedCars.length > 0 && (
-            <motion.ol
-              key="list"
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -20, opacity: 0 }}
-              className={styles.challengeItems}
-            >
-              <AnimatePresence>
-                {displayedCars.map((car) => (
-                  <CarItem
-                    key={car.id}
-                    car={car}
-                    onViewDetails={() => handleViewDetails(car.id)}
-                    isExpanded={expanded === car.id}
-                  />
-                ))}
-              </AnimatePresence>
-            </motion.ol>
-          )}
-          {displayedCars.length === 0 && (
-            <motion.p
-              key="fallback"
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -20, opacity: 0 }}
-            >
-              No cars found.
-            </motion.p>
-          )}
-        </AnimatePresence>
-      </CarTabs>
-    </div>
+    <AnimatePresence mode="wait">
+      <div className={styles.cars}>
+        <CarTabs cars={filteredCars} onSelectType={handleSelectType} selectedType={selectedType}>
+          <AnimatePresence mode="wait">
+            {displayedCars.length > 0 && (
+              <motion.ol
+                key="list"
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                className={styles.challengeItems}
+              >
+                <AnimatePresence>
+                  {displayedCars.map((car) => (
+                    <CarItem
+                      key={car.id}
+                      car={car}
+                      onViewDetails={() => handleViewDetails(car.id)}
+                      isExpanded={expanded === car.id}
+                    />
+                  ))}
+                </AnimatePresence>
+              </motion.ol>
+            )}
+            {displayedCars.length === 0 && (
+              <motion.p
+                key="fallback"
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+              >
+                No cars found.
+              </motion.p>
+            )}
+          </AnimatePresence>
+        </CarTabs>
+      </div>
+    </AnimatePresence>
   );
 }

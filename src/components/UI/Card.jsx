@@ -5,13 +5,13 @@ import styles from "./Card.module.css";
 const Card = (props) => {
   return (
     <motion.div
-      className={styles.card}
-      initial={{ opacity: 0, y: 10 }}
+      className={`${props.className} ${styles.card}`}
+      initial={{ opacity: 0}}
       whileInView={{
         opacity: [0, 0.2, 0.5, 1],
-        y: [10, 0],
-        transition: { duration: 0.2, type: "tween", ease: "easeInOut" },
+        transition: { duration: 0.4, type: "tween", ease: "easeInOut" },
       }}
+      exit={{ opacity: 0}}
       viewport={{ once: false }}
     >
       <h2>{props.title}</h2>
