@@ -1,11 +1,16 @@
+import { motion } from "framer-motion";
 import styles from "./Service.module.css";
 
 const Service = () => {
   return (
-    <main className={styles.service}>
+    <motion.main
+      className={styles.service}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.4 } }}
+    >
       <h1>Service</h1>
-      <p>Do anything here</p>
-    </main>
+      <p>Still thinking of what to add here</p>
+    </motion.main>
   );
 };
 

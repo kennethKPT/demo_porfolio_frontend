@@ -17,7 +17,7 @@
   text-decoration: underline;
 }
 
-@media (min-width: 1201px) {
+@media screen and (min-width: 1201px) {
   .home > div {
     width: 48%;
   }

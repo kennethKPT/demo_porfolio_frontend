@@ -22,14 +22,14 @@ export default function WelcomePage() {
         taAlign="taLeft"
         maAlign="toLeft"
       >
-        <h1>Ready for a new car?</h1>
+        <h1>Landing page showing a car</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer galley of type and scrambled it to make a
           type specimen book. It has survived not only five centuries, but also the leap into electronic.
         </p>
         <Button onClick={navigateToMainHandler} className="bold" type="bgless">
-          View Cars &gt;&gt;
+          View Demo Site &gt;&gt;
         </Button>
       </WelcomeSection>
       <WelcomeSection
@@ -39,14 +39,14 @@ export default function WelcomePage() {
         taAlign="taCenter"
         maAlign="toCenter"
       >
-        <h1>Again, are YOU ready?!</h1>
+        <h1>Are you ready?!</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
           make a type specimen book.
         </p>
         <Button onClick={navigateToMainHandler} className="bold" type="bgless">
-          View Cars &gt;&gt;
+          View Demo Site &gt;&gt;
         </Button>
       </WelcomeSection>
       <WelcomeSection
@@ -64,7 +64,7 @@ export default function WelcomePage() {
           typesetting, remaining essentially unchanged.
         </p>
         <Button onClick={navigateToMainHandler} className="bold" type="bgless">
-          View Cars &gt;&gt;
+          View Demo Site &gt;&gt;
         </Button>
       </WelcomeSection>
     </main>

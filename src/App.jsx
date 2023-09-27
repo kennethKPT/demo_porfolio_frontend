@@ -4,10 +4,10 @@ import RootLayout from "./pages/Root";
 import WelcomePage from "./pages/Welcome";
 import HomePage from "./pages/Home";
 import Cars from "./pages/Cars";
-import DemoAPI from "./pages/Demo/DemoAPI";
-import DemoSPA from "./pages/Demo/DemoAPI";
-import DemoResponsiveness from "./pages/Demo/DemoAPI";
-import DemoCloud from "./pages/Demo/DemoAPI";
+import DemoAPI from "./pages/Demo/API";
+import DemoSPA from "./pages/Demo/SPA";
+import DemoResponsiveness from "./pages/Demo/Responsiveness";
+import DemoCloud from "./pages/Demo/Cloud";
 import Service from "./pages/Service";
 import About from "./pages/About";
 

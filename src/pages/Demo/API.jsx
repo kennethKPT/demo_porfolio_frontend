@@ -1,10 +1,10 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Card from "../../components/UI/Card";
 import LoadingIndicator from "../../components/UI/LoadingIndicator";
 
 import apiImg from "../../assets/api.jpg";
-import styles from "./DemoAPI.module.css";
+import styles from "./API.module.css";
 import Button from "../../components/UI/Button";
 
 const DemoAPI = () => {

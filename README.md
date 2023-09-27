@@ -1,8 +1,10 @@
-# React + Vite
+# Demo Website by Kenneth Tsang
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a demo website by Kenneth Tsang.
+You may visit the demo visit by the landing page (Welcome Page) or the home page:
 
-Currently, two official plugins are available:
+- [Welcome Page](https://cdpong.com) shows a welcoming demo parallax
+- [Home Page](https://cdpong.com/Home) shows the main home page, with links to different sections
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This Github repository is public so that everyone can view the code.
+Any feedback are welcome!

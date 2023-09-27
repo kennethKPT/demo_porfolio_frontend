@@ -5,7 +5,7 @@ import styles from "./Card.module.css";
 const Card = (props) => {
   return (
     <motion.div
-      className={`${props.className} ${styles.card}`}
+      className={`${props.className?props.className:""} ${styles.card}`}
       initial={{ opacity: 0}}
       whileInView={{
         opacity: [0, 0.2, 0.5, 1],
@@ -22,7 +22,7 @@ const Card = (props) => {
             {props.children}
           </>
         )}
-        {!props.img && props.context}
+        {!props.img && props.children}
       </div>
     </motion.div>
   );
