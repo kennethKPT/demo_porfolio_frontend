@@ -41,7 +41,6 @@ const About = () => {
       </p>
       <p>
         I have worked in the IT industry for 10+ years, managing in-house application systems as well as ERP.
-        <br />I am working as a freelancer now so as to spend more quality time with my family.
       </p>
       <p>Here listed the major tech stack I am familiar, for reference.</p>
       <Card title="Technology Stack">
@@ -64,7 +63,7 @@ const About = () => {
         <div className={styles.techStack}>
           <h2>Back-End</h2>
           <TechStackItem
-            from="50vw"
+            from="-100vw"
             delayS={0.5}
             listItem={[
               { img: images.nodejsImg, text: "NodeJS (With Express)" },
