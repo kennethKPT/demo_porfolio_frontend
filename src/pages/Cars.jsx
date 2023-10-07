@@ -13,7 +13,7 @@ export default function CarsPage() {
         <p style={{ margin: "0 2rem" }}>
           This is an interactive demo listing.
           <br />
-          You can add new a car, mark the as liked, unlike them and so.
+          You can add new car, mark the as liked, unlike them and so.
         </p>
         <Cars />
       </motion.main>
