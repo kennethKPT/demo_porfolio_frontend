@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { CarsContext } from "../../store/cars-context.jsx";
-import CarItem from "./CarItem.jsx";
-import CarTabs from "./CarTabs.jsx";
+import { CarsContext } from "../../store/carsContext";
+import CarItem from "./CarItem";
+import CarTabs from "./CarTabs";
 
 import styles from "./Cars.module.css";
 

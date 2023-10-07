@@ -78,7 +78,7 @@ const Navigation = () => {
             },
           ]}
         ></NavigationItem>
-        <NavigationItem to="/Service" text="Service" onClick={clsMenu} showMobileMenu={isMobile} variants={item} />
+        <NavigationItem to="/Playground" text="Playground" onClick={clsMenu} showMobileMenu={isMobile} variants={item} />
         <NavigationItem to="/About" text="About" onClick={clsMenu} showMobileMenu={isMobile} variants={item} />
         <a href="#" className={styles.icon} onClick={triggerMobileMenu}>
           &#9776;

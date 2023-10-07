@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Cars from "../components/Cars/Cars.jsx";
-import CarsContextProvider from "../store/cars-context.jsx";
+import Cars from "../components/Cars/Cars";
+import CarsContextProvider from "../store/carsContext";
 
 export default function CarsPage() {
   return (
@@ -13,7 +13,7 @@ export default function CarsPage() {
         <p style={{ margin: "0 2rem" }}>
           This is an interactive demo listing.
           <br />
-          You can add new car, mark the as liked, unlike them and so.
+          You can add new a car, mark the as liked, unlike them and so.
         </p>
         <Cars />
       </motion.main>

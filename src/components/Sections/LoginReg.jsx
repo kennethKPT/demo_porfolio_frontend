@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Form } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { AnimatePresence } from "framer-motion";
 
 import styles from "./LoginReg.module.css";
@@ -7,6 +8,8 @@ import Modal from "../UI/Modal";
 import Button from "../UI/Button";
 
 const LoginReg = () => {
+  const notificationCount = useSelector((state) => state.notification.count);
+  const displayNotification = useSelector((state) => state.notification.show);
   const [isRegistering, setIsRegistering] = useState();
   const [isLoggingIn, setIsLoggingIn] = useState(false);
 
@@ -88,11 +91,14 @@ const LoginReg = () => {
       <div className={styles.loginReg}>
         <span className={styles.register} onClick={registerHandler}>
           Register
-        </span>{" "}
-        |{" "}
+        </span>
+        &nbsp; |&nbsp;
         <span className={styles.login} onClick={loginHandler}>
           Login
         </span>
+        {displayNotification && (
+          <span className={styles.notifications}>{notificationCount > 9 ? "9+" : notificationCount}</span>
+        )}
       </div>
     </>
   );

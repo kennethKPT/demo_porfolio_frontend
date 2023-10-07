@@ -1,7 +1,7 @@
 import { useContext, useRef, useState } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 
-import { CarsContext } from "../../store/cars-context.jsx";
+import { CarsContext } from "../../store/carsContext.jsx";
 
 import Modal from "../UI/Modal.jsx";
 

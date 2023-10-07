@@ -1,0 +1,34 @@
+.playground {
+  margin: 6rem 2rem;
+}
+
+.playContent {
+  width: 100%;
+}
+
+.playContent pre {
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  min-height: 2rem;
+  overflow-x: auto;
+}
+
+.playContent p {
+  margin: 0;
+}
+
+.playContent .buttonGroup {
+  margin-top: 1rem;
+}
+
+.playContent button {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .playContent button {
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

@@ -9,6 +9,13 @@
   text-decoration: underline;
 }
 
+.loginReg .notifications {
+  margin-left: 0.2rem;
+  padding: 0.1rem 0.2rem 0.2rem;
+  background-color: red;
+  border-radius: 0.2rem;
+}
+
 .regLoginForm label {
   display: block;
   margin-bottom: 0.15rem;
